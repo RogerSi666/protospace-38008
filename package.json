@@ -12,4 +12,8 @@
   "devDependencies": {
     "webpack-dev-server": "^4.9.3"
   }
+  },  // ここにカンマを記述
+ "engines" : {
+   "node": "14.x.x"  // ここに先ほど確認したバージョンを記述
+ }
 }
