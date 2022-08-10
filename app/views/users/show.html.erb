@@ -8,19 +8,19 @@
         <tbody>
           <tr>
             <th class="table__col1">名前</th>
-            <td class="table__col2"><%= @name  %></td>
+            <td class="table__col2"><%= @user.name %></td>
           </tr>
           <tr>
-            <th class="table__col1"> profile </th>
-            <td class="table__col2"><%= @profile %></td>
+            <th class="table__col1">プロフィール</th>
+            <td class="table__col2"><%= @user.profile %></td>
           </tr>
           <tr>
             <th class="table__col1">所属</th>
-            <td class="table__col2"><%= @occupation %></td>
+            <td class="table__col2"><%= @user.occupation %></td>
           </tr>
           <tr>
             <th class="table__col1">役職</th>
-            <td class="table__col2"><%= @position %></td>
+            <td class="table__col2"><%= @user.position %></td>
           </tr>
         </tbody>
       </table>
@@ -28,7 +28,7 @@
 <%= "#{@user.name}さんのプロトタイプ"%>
       </h2>
       <div class="user__card">
-      <%= render partial: "prototypes/prototype", collection: @prototypes %>    </div>
+      <%= render partial: "prototypes/prototype", collection: @user.prototypes %>    </div>
         <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
       </div>
     </div>
